@@ -1,14 +1,17 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     int n;
     cin >> n;
-    int first=0,sec=1,temp=1;
-    if(n==0){
+    int first = 0, sec = 1, temp = 1;
+    if (n == 0)
+    {
         cout << 0 << " " << 0 << " " << 0 << endl;
         return 0;
     }
-    while(n!=temp){
+    while (n != temp)
+    {
         first = sec;
         sec = temp;
         temp = first + sec;
